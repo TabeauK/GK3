@@ -18,7 +18,7 @@ namespace GK3
                 (pictureBox.Tag as Label).Dispose();
                 pictureBox.Tag = null;
             }
-            if ((e as MouseEventArgs).Button == MouseButtons.Left)
+            if ((e as MouseEventArgs).Button == MouseButtons.Right)
                 using (OpenFileDialog dlg = new OpenFileDialog())
                 {
                     dlg.Title = "Open Image";
